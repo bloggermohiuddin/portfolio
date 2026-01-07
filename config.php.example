@@ -1,0 +1,4 @@
+<?php
+define('SITE_URL', (empty($_SERVER['HTTPS']) ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST']);
+define('PAGE_ACCESS_TOKEN', '');
+define('recipientId', null);
