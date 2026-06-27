@@ -1,4 +1,9 @@
 <?php
+// Site
 define('SITE_URL', (empty($_SERVER['HTTPS']) ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST']);
-define('PAGE_ACCESS_TOKEN', '');
-define('recipientId', null);
+
+// Telegram Bot
+// Get token from @BotFather on Telegram
+// Get chat ID by messaging your bot, then visit: https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates
+define('TELEGRAM_BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE');
+define('TELEGRAM_CHAT_ID', 'YOUR_CHAT_ID_HERE');

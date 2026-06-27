@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohiuddin.mojumderit.com/sitemap.xml

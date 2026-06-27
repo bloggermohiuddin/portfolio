@@ -1,102 +1,57 @@
-# MD Mohiuddin Portfolio
+# MD Mohiuddin
 
-A modern personal portfolio website built with **HTML, Tailwind CSS, JavaScript, and PHP**. The project includes a smart contact form that sends messages directly to your **Facebook Page Inbox** using the **Messenger API**.
+Personal portfolio website.
 
----
+Hey, I'm Mohiuddin — a web developer from Shibchar, Madaripur, Bangladesh. Built with **HTML, CSS, JavaScript**, and **PHP**. No frameworks.
 
-## ✨ Live Features
+🔗 **Live:** [mohiuddin.mojumderit.com](https://mohiuddin.mojumderit.com)
 
-* Clean, responsive UI with Tailwind CSS
-* No database required (static + PHP form handler)
-* Facebook Messenger API contact form
-* Easy configuration with a single `config.php`
-* Optimized for shared hosting
+## Quick Start
 
----
+```bash
+# Install dependencies
+npm install
 
-## 📁 Project Structure
+# Build Tailwind CSS (run after HTML changes)
+npm run build:css
+
+# Start dev server
+php -S localhost:8000
+```
+
+## File Structure
 
 ```
 portfolio/
+├── index.php            # Main page
+├── send_telegram.php    # Contact form → Telegram
+├── config.php           # Credentials (gitignored)
+├── config.php.example   # Config template
+├── script.js            # Scripts
+├── styles.css           # Custom styles
+├── tailwind.css         # Built CSS (generated)
+├── src.css              # Tailwind source
+├── tailwind.config.js   # Tailwind config
+├── package.json         # npm scripts
 ├── assets/
-│   ├── css/
-│   └── js/
-├── config.php.example
-├── index.php
+│   ├── images/          # Photos & screenshots
+│   └── files/           # Resume PDF
+├── .htaccess            # Apache config
 └── README.md
 ```
 
----
+## Contact Form (Telegram)
 
-## ⚙ Installation
-
-### Step 1: Clone the Repository
-
-```bash
-git clone https://github.com/bloggermohiuddin/portfolio.git
-```
-
-### Step 2: Create `config.php`
-
-```bash
-cp config.php.example config.php
-```
-
-Open `config.php` and add:
+1. Create a bot via [@BotFather](https://t.me/BotFather)
+2. Copy the bot token
+3. Message your bot, then visit `https://api.telegram.org/bot<TOKEN>/getUpdates` to get your chat ID
+4. Copy `config.php.example` to `config.php` and fill in your values
 
 ```php
-<?php
-define('SITE_URL', (empty($_SERVER['HTTPS']) ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST']);
-define('PAGE_ACCESS_TOKEN', 'YOUR_PAGE_ACCESS_TOKEN');
-// After first user sends a message to your Facebook Page, collect sender PSID (recipient ID)
-define('recipientId', 'FIRST_USER_PSID');
+define('TELEGRAM_BOT_TOKEN', 'your_token');
+define('TELEGRAM_CHAT_ID', 'your_chat_id');
 ```
 
----
+## License
 
-### Step 3: Upload to Server
-
-Upload all files to your PHP hosting. And See Results
-
----
-
-### Step 4: Test Contact Form
-
-Send a test message – it will arrive in your Facebook Profile inbox.
-
----
-
-## 🔐 Important Token Note
-
-⚠ You must generate a **Permanent Page Access Token**. Temporary tokens expire and will cause message delivery failures.
-
-Recommended method:
-
-* Use Facebook System User token or long‑lived Page token.
-* Never use short‑lived developer tokens in production.
-
----
-
-## 🔐 How to Get Facebook Page Access Token
-
-1. Go to Facebook Developers
-2. Create App → Business Type
-3. Add Messenger Product
-4. Generate Page Access Token
-5. Send a test message to your Page and collect the sender PSID (recipient ID) from Webhook / Inbox API logs
-6. Paste into `config.php`
-
----
-
-## 🤝 Contributing
-
-* Fork the repository
-* Create your branch
-* Commit changes
-* Open a Pull Request
-
----
-
-## 📜 License
-
-MIT License
+MIT
