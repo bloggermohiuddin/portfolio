@@ -280,27 +280,27 @@
                 </h3>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🌐</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-html5 text-[#E34F26]"></i></div>
                         <p class="font-semibold text-sm">HTML5</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-secondary/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🎨</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-css3-alt text-[#1572B6]"></i></div>
                         <p class="font-semibold text-sm">CSS3</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-cyan-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🌊</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-wind text-[#06B6D4]"></i></div>
                         <p class="font-semibold text-sm">Tailwind CSS</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-purple-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🅱️</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-bootstrap text-[#7952B3]"></i></div>
                         <p class="font-semibold text-sm">Bootstrap</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-yellow-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(250,204,21,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">⚡</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-js text-[#F7DF1E]"></i></div>
                         <p class="font-semibold text-sm">JavaScript</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-blue-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(96,165,250,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📦</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-node-js text-[#0769AD]"></i></div>
                         <p class="font-semibold text-sm">jQuery</p>
                     </div>
                 </div>
@@ -314,15 +314,15 @@
                 </h3>
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-indigo-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(129,140,248,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🐘</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-php text-[#777BB4]"></i></div>
                         <p class="font-semibold text-sm">PHP</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-orange-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(251,146,60,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🗄️</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-database text-[#4479A1]"></i></div>
                         <p class="font-semibold text-sm">MySQL</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-green-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(74,222,128,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🔗</div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-plug text-green-400"></i></div>
                         <p class="font-semibold text-sm">REST API</p>
                     </div>
                 </div>
@@ -336,27 +336,27 @@
                 </h3>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-orange-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">🔀</div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-git-alt text-[#F05032]"></i></div>
                         <p class="font-semibold text-sm">Git</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-gray-300/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">🐙</div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-github text-white"></i></div>
                         <p class="font-semibold text-sm">GitHub</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-blue-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">📝</div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-code text-[#007ACC]"></i></div>
                         <p class="font-semibold text-sm">VS Code</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-orange-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">📮</div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-paper-plane text-[#FF6C37]"></i></div>
                         <p class="font-semibold text-sm">Postman</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-blue-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">🖥️</div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-server text-[#FF6C37]"></i></div>
                         <p class="font-semibold text-sm">cPanel</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-red-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">🐧</div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-linux text-[#FCC624]"></i></div>
                         <p class="font-semibold text-sm">Linux</p>
                     </div>
                 </div>
