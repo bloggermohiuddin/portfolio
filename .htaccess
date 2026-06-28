@@ -30,3 +30,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 Options -Indexes
+
+# Custom 404 Page
+ErrorDocument 404 /404.php

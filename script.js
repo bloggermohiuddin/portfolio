@@ -128,6 +128,7 @@
     // ===== Navbar & Back to Top =====
     const navbar = document.getElementById('navbar');
     const backToTop = document.getElementById('back-to-top');
+    const scrollIndicator = document.getElementById('scroll-indicator');
 
     function updateNavbar() {
         const scrollY = window.scrollY;
@@ -142,6 +143,17 @@
             backToTop.classList.add('visible');
         } else {
             backToTop.classList.remove('visible');
+        }
+
+        // Hide scroll indicator on scroll
+        if (scrollIndicator) {
+            if (scrollY > 100) {
+                scrollIndicator.style.opacity = '0';
+                scrollIndicator.style.pointerEvents = 'none';
+            } else {
+                scrollIndicator.style.opacity = '';
+                scrollIndicator.style.pointerEvents = '';
+            }
         }
 
         ticking = false;
@@ -243,7 +255,7 @@
 
     // ===== Typewriter Effect =====
     const typedTextEl = document.getElementById('typed-text');
-    const phrases = ['build full stack web apps', 'work with PHP & JavaScript', 'design clean backend systems', 'develop REST APIs & databases'];
+    const phrases = ['build things for the web', 'write code that scales', 'make UIs feel right', 'ship products people use', 'break things and fix them'];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -422,7 +434,7 @@
                 setTimeout(() => {
                     el.style.opacity = '1';
                     el.style.transform = 'translateY(0)';
-                    el.style.transition = 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+                    el.style.transition = 'opacity 1s cubic-bezier(0.23, 1, 0.32, 1), transform 1s cubic-bezier(0.23, 1, 0.32, 1)';
                 }, i * 120);
             });
             return;
@@ -437,36 +449,54 @@
             .to('#hero h1', {
                 opacity: 1,
                 y: 0,
-                duration: 0.9,
+                duration: 1,
                 ease: 'power3.out'
             })
+            .to('#hero .max-w-lg', {
+                opacity: 1,
+                y: 0,
+                duration: 0.9,
+                ease: 'power3.out'
+            }, '-=0.6')
             .to('.h-10.mb-10', {
                 opacity: 1,
                 y: 0,
                 duration: 0.9,
                 ease: 'power3.out'
-            }, '-=0.6')
+            }, '-=0.5')
             .to('#hero .flex.flex-col', {
                 opacity: 1,
                 y: 0,
                 duration: 0.9,
                 ease: 'power3.out'
-            }, '-=0.6')
+            }, '-=0.5')
+            .to('#hero .flex.items-center.gap-6', {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: 'power3.out'
+            }, '-=0.4')
             .to('#hero .flex-shrink-0', {
                 opacity: 1,
                 y: 0,
-                duration: 1,
+                duration: 1.1,
                 ease: 'power3.out'
-            }, '-=0.7');
+            }, '-=0.8')
+            .to('#scroll-indicator', {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: 'power3.out'
+            }, '-=0.4');
 
         // Scroll-triggered animations with stagger
         gsap.utils.toArray('.scroll-reveal').forEach(el => {
             gsap.fromTo(el,
-                { opacity: 0, y: 40 },
+                { opacity: 0, y: 35 },
                 {
                     opacity: 1,
                     y: 0,
-                    duration: 0.9,
+                    duration: 1,
                     ease: 'power3.out',
                     scrollTrigger: {
                         trigger: el,
@@ -490,8 +520,8 @@
                             opacity: 1,
                             y: 0,
                             scale: 1,
-                            duration: 0.5,
-                            stagger: 0.04,
+                            duration: 0.6,
+                            stagger: 0.05,
                             ease: 'power3.out'
                         }
                     );
@@ -511,8 +541,8 @@
                         {
                             opacity: 1,
                             y: 0,
-                            duration: 0.7,
-                            stagger: 0.12,
+                            duration: 0.8,
+                            stagger: 0.15,
                             ease: 'power3.out'
                         }
                     );
@@ -533,8 +563,8 @@
                             opacity: 1,
                             y: 0,
                             scale: 1,
-                            duration: 0.6,
-                            stagger: 0.06,
+                            duration: 0.7,
+                            stagger: 0.08,
                             ease: 'power3.out'
                         }
                     );
@@ -688,16 +718,18 @@
     // ===== Smooth Scroll for Anchor Links =====
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
             const target = document.querySelector(targetId);
             if (target) {
+                e.preventDefault();
                 const navHeight = navbar ? navbar.offsetHeight : 80;
                 const offsetTop = target.offsetTop - navHeight;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
                 });
+                history.pushState(null, null, targetId);
             }
         });
     });
@@ -721,7 +753,7 @@
         }, 200);
     }, { passive: true });
 
-    // ===== Lazy load images with Intersection Observer =====
+    // ===== Lazy load images with blur-up =====
     if ('IntersectionObserver' in window) {
         const lazyImages = document.querySelectorAll('img[data-src]');
         const imageObserver = new IntersectionObserver((entries) => {
@@ -730,6 +762,9 @@
                     const img = entry.target;
                     img.src = img.dataset.src;
                     img.removeAttribute('data-src');
+                    img.addEventListener('load', () => {
+                        img.classList.add('loaded');
+                    });
                     imageObserver.unobserve(img);
                 }
             });

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="MD Mohiuddin — Full Stack Web Developer from Bangladesh. I build fast, clean web applications using PHP, JavaScript, MySQL, and Tailwind CSS.">
+    <meta name="description" content="MD Mohiuddin — Full Stack Web Developer from Bangladesh. I build web applications that solve real problems using PHP, JavaScript, MySQL, and Tailwind CSS.">
     <meta name="keywords" content="MD Mohiuddin, Mohiuddin, Full Stack Developer, PHP Developer, JavaScript Developer, MySQL, Tailwind CSS, Frontend Developer, Backend Developer, Bangladesh, Web Developer, SaaS Developer, Portfolio">
     <meta name="author" content="MD Mohiuddin">
     <meta name="theme-color" content="#0A0A0A">
@@ -80,6 +80,9 @@
     </script>
 </head>
 <body class="bg-dark text-white font-sans overflow-x-hidden">
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
 
     <!-- Preloader -->
     <div id="preloader" class="fixed inset-0 z-[9999] bg-dark flex items-center justify-center">
@@ -165,37 +168,77 @@
             <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                 <!-- Left Content -->
                 <div class="flex-1 text-center lg:text-left">
-                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black mb-6 leading-tight opacity-0 translate-y-10">
-                        Hi, I'm<br>
-                        <span class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">MD Mohiuddin</span>
+                    <h1 class="text-5xl sm:text-6xl lg:text-8xl font-black mb-8 leading-[1.05] opacity-0 translate-y-10">
+                        <span class="text-white">Hi, I'm</span><br>
+                        <span class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Mohiuddin</span>
                     </h1>
 
                     <div class="h-10 mb-10 flex items-center justify-center lg:justify-start opacity-0 translate-y-10">
-                        <span class="text-white font-semibold text-lg">I&nbsp;</span>
-                        <span id="typed-text" class="text-primary font-mono font-semibold text-lg"></span>
-                        <span id="typed-cursor" class="w-[3px] h-6 bg-primary ml-1 animate-blink"></span>
+                        <span class="text-gray-500 font-medium text-base">I&nbsp;</span>
+                        <span id="typed-text" class="text-primary font-mono font-semibold text-base"></span>
+                        <span id="typed-cursor" class="w-[3px] h-5 bg-primary ml-1 animate-blink"></span>
                     </div>
 
                     <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start opacity-0 translate-y-10">
-                        <a href="#projects" class="group relative px-8 py-4 bg-gradient-to-r from-primary to-blue-600 rounded-2xl font-semibold text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:scale-105">
+                        <a href="#projects" class="group relative px-8 py-4 bg-gradient-to-r from-primary to-blue-600 rounded-2xl font-semibold text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] hover:scale-105">
                             <span class="relative z-10 flex items-center gap-2">
-                                <i class="fas fa-rocket"></i> View Projects
+                                <i class="fas fa-rocket"></i> See My Work
                             </span>
                         </a>
                         <a href="assets/files/resume.pdf" target="_blank" class="group px-8 py-4 rounded-2xl font-semibold bg-dark-surface border border-white/10 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-105 flex items-center gap-2">
                             <i class="fas fa-file-arrow-down"></i> Download Resume
                         </a>
                     </div>
+
+                    <!-- Quick Stats -->
+                    <div class="flex items-center gap-6 sm:gap-8 mt-12 justify-center lg:justify-start opacity-0 translate-y-10">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-black text-primary">3+</div>
+                            <div class="text-gray-500 text-xs">Years Coding</div>
+                        </div>
+                        <div class="w-px h-8 bg-white/10"></div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-black text-secondary">15+</div>
+                            <div class="text-gray-500 text-xs">Projects Shipped</div>
+                        </div>
+                        <div class="w-px h-8 bg-white/10"></div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-black text-accent">10+</div>
+                            <div class="text-gray-500 text-xs">Technologies</div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Right Avatar -->
                 <div class="flex-shrink-0 relative opacity-0 translate-y-10">
+                    <!-- Floating Tech Icons -->
+                    <div class="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-dark-card border border-white/10 flex items-center justify-center animate-float shadow-lg" style="animation-delay: 0s;">
+                        <i class="fab fa-php text-lg" style="color:#777BB4"></i>
+                    </div>
+                    <div class="absolute -top-2 -right-6 w-12 h-12 rounded-xl bg-dark-card border border-white/10 flex items-center justify-center animate-float shadow-lg" style="animation-delay: 0.5s;">
+                        <i class="fab fa-js text-lg" style="color:#F7DF1E"></i>
+                    </div>
+                    <div class="absolute -bottom-4 -left-6 w-12 h-12 rounded-xl bg-dark-card border border-white/10 flex items-center justify-center animate-float shadow-lg" style="animation-delay: 1s;">
+                        <i class="fas fa-database text-lg" style="color:#4479A1"></i>
+                    </div>
+                    <div class="absolute -bottom-2 -right-4 w-12 h-12 rounded-xl bg-dark-card border border-white/10 flex items-center justify-center animate-float shadow-lg" style="animation-delay: 1.5s;">
+                        <i class="fas fa-wind text-lg" style="color:#06B6D4"></i>
+                    </div>
+
                     <div class="hero-avatar-wrapper">
                         <div class="hero-avatar-border">
                             <img src="assets/images/mohiuddin.webp" alt="MD Mohiuddin - Full Stack Developer" class="hero-avatar-img" loading="eager">
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 translate-y-10" id="scroll-indicator">
+            <span class="text-gray-500 text-xs font-mono tracking-widest">SCROLL</span>
+            <div class="w-5 h-8 rounded-full border-2 border-gray-500/30 flex justify-center pt-1.5">
+                <div class="w-1 h-2 rounded-full bg-primary animate-bounce"></div>
             </div>
         </div>
 
@@ -206,58 +249,109 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-20 scroll-reveal">
-                <span class="text-primary font-mono text-sm tracking-widest uppercase">Get To Know Me</span>
+                <span class="text-primary font-mono text-sm tracking-widest uppercase">The Person Behind the Code</span>
                 <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">About <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Me</span></h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">A bit about who I am and what drives me to build things.</p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Left - Image -->
-                <div class="relative scroll-reveal">
-                    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-dark-card to-dark-surface border border-white/5 p-2">
-                        <div class="rounded-2xl overflow-hidden bg-dark-surface aspect-square">
-                            <img src="assets/images/mohiuddin.webp" alt="MD Mohiuddin" class="w-full h-full object-cover">
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 auto-rows-auto">
+
+                <!-- Photo Card (spans 2 cols, 2 rows) -->
+                <div class="col-span-2 row-span-2 scroll-reveal">
+                    <div class="relative h-full rounded-3xl overflow-hidden bg-gradient-to-br from-dark-card to-dark-surface border border-white/5 p-2 group">
+                        <div class="rounded-2xl overflow-hidden bg-dark-surface h-full min-h-[300px] sm:min-h-[400px]">
+                            <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/mohiuddin.webp" alt="MD Mohiuddin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 blur-load">
                         </div>
-                    </div>
-                    <!-- Floating Stats Card -->
-                    <div class="absolute -bottom-6 -right-6 bg-dark-card/90 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl animate-float">
-                        <div class="text-3xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">3+</div>
-                        <div class="text-gray-400 text-sm">Years of Learning</div>
                     </div>
                 </div>
 
-                <!-- Right - Content -->
-                <div class="scroll-reveal">
-                    <h3 class="text-2xl sm:text-3xl font-bold mb-6">
-                        Hi, I'm <span class="text-primary">Mohiuddin</span>
-                    </h3>
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        I'm a full stack developer from Bangladesh. I build web applications using PHP, JavaScript, MySQL, and Tailwind CSS. I enjoy turning ideas into products that people actually use.
-                    </p>
-                    <p class="text-gray-400 leading-relaxed mb-8">
-                        Currently focused on building SaaS platforms and learning new technologies every day. I like clean code, simple UIs, and solving problems that matter.
-                    </p>
+                <!-- Bio Card -->
+                <div class="col-span-2 scroll-reveal">
+                    <div class="h-full p-6 sm:p-8 rounded-3xl bg-dark-card border border-white/5">
+                        <h3 class="text-xl sm:text-2xl font-bold mb-4">
+                            Hey, I'm <span class="text-primary">Mohiuddin</span> <span class="inline-block animate-wave">&#128075;</span>
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed text-sm sm:text-base">
+                            Full stack developer from Bangladesh. I'm obsessed with building things on the web — there's something about writing code and watching it come to life as a real product that people use. That never gets old.
+                        </p>
+                    </div>
+                </div>
 
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-6 mb-8">
-                        <div class="text-center p-4 rounded-2xl bg-dark-surface border border-white/5">
-                            <div class="text-3xl font-black text-primary counter" data-target="3">0</div>
-                            <div class="text-gray-500 text-sm mt-1">Years Experience</div>
+                <!-- Currently Learning Card -->
+                <div class="col-span-1 scroll-reveal">
+                    <div class="h-full p-5 sm:p-6 rounded-3xl bg-dark-card border border-white/5">
+                        <div class="w-10 h-10 rounded-xl bg-green-400/10 flex items-center justify-center mb-4">
+                            <i class="fas fa-book-open text-green-400"></i>
                         </div>
-                        <div class="text-center p-4 rounded-2xl bg-dark-surface border border-white/5">
-                            <div class="text-3xl font-black text-secondary counter" data-target="15">0</div>
-                            <div class="text-gray-500 text-sm mt-1">Projects Built</div>
-                        </div>
-                        <div class="text-center p-4 rounded-2xl bg-dark-surface border border-white/5">
-                            <div class="text-3xl font-black text-accent counter" data-target="10">0</div>
-                            <div class="text-gray-500 text-sm mt-1">Technologies</div>
+                        <h4 class="font-bold text-sm mb-3">Currently Learning</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-green-400/10 text-green-400 text-xs font-medium">Node.js</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-green-400/10 text-green-400 text-xs font-medium">Docker</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-green-400/10 text-green-400 text-xs font-medium">TypeScript</span>
                         </div>
                     </div>
-
-                    <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-blue-600 rounded-2xl font-semibold hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:scale-105 transition-all duration-300">
-                        <i class="fas fa-comments"></i> Get In Touch
-                    </a>
                 </div>
+
+                <!-- Stats Card -->
+                <div class="col-span-1 scroll-reveal">
+                    <div class="h-full p-5 sm:p-6 rounded-3xl bg-dark-card border border-white/5">
+                        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-line text-primary"></i>
+                        </div>
+                        <h4 class="font-bold text-sm mb-4">By the Numbers</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-400 text-xs">Years Coding</span>
+                                <span class="text-primary font-bold text-sm counter" data-target="3">0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-400 text-xs">Projects Shipped</span>
+                                <span class="text-secondary font-bold text-sm counter" data-target="15">0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-400 text-xs">Technologies</span>
+                                <span class="text-accent font-bold text-sm counter" data-target="10">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What I Enjoy Card -->
+                <div class="col-span-1 scroll-reveal">
+                    <div class="h-full p-5 sm:p-6 rounded-3xl bg-dark-card border border-white/5">
+                        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
+                            <i class="fas fa-heart text-accent"></i>
+                        </div>
+                        <h4 class="font-bold text-sm mb-3">What I Enjoy</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-400 text-xs">
+                                <span class="w-1 h-1 rounded-full bg-accent"></span> Solving real problems
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-400 text-xs">
+                                <span class="w-1 h-1 rounded-full bg-accent"></span> Clean, simple UIs
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-400 text-xs">
+                                <span class="w-1 h-1 rounded-full bg-accent"></span> Making things faster
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="col-span-2 scroll-reveal">
+                    <div class="h-full p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Want to work together?</h4>
+                            <p class="text-gray-400 text-sm">I'm always open to interesting projects and conversations.</p>
+                        </div>
+                        <a href="#contact" class="px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-blue-600 font-semibold text-sm hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:scale-105 transition-all duration-300 whitespace-nowrap flex items-center gap-2">
+                            <i class="fas fa-comments"></i> Say Hi
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -267,9 +361,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-20 scroll-reveal">
-                <span class="text-primary font-mono text-sm tracking-widest uppercase">My Skills</span>
+                <span class="text-primary font-mono text-sm tracking-widest uppercase">Technologies I Use Daily</span>
                 <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">Tech <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Stack</span></h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">The tools and technologies I use to build, test, and ship web applications.</p>
             </div>
 
             <!-- Frontend -->
@@ -280,27 +375,27 @@
                 </h3>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-html5 text-[#E34F26]"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#E34F26"><i class="fab fa-html5"></i></div>
                         <p class="font-semibold text-sm">HTML5</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-secondary/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-css3-alt text-[#1572B6]"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#1572B6"><i class="fab fa-css3-alt"></i></div>
                         <p class="font-semibold text-sm">CSS3</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-cyan-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-wind text-[#06B6D4]"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#06B6D4"><i class="fas fa-wind"></i></div>
                         <p class="font-semibold text-sm">Tailwind CSS</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-purple-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-bootstrap text-[#7952B3]"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#7952B3"><i class="fab fa-bootstrap"></i></div>
                         <p class="font-semibold text-sm">Bootstrap</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-yellow-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(250,204,21,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-js text-[#F7DF1E]"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#F7DF1E"><i class="fab fa-js"></i></div>
                         <p class="font-semibold text-sm">JavaScript</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-blue-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(96,165,250,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-node-js text-[#0769AD]"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#0769AD"><i class="fab fa-node-js"></i></div>
                         <p class="font-semibold text-sm">jQuery</p>
                     </div>
                 </div>
@@ -314,15 +409,15 @@
                 </h3>
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-indigo-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(129,140,248,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-php text-[#777BB4]"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#777BB4"><i class="fab fa-php"></i></div>
                         <p class="font-semibold text-sm">PHP</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-orange-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(251,146,60,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-database text-[#4479A1]"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#4479A1"><i class="fas fa-database"></i></div>
                         <p class="font-semibold text-sm">MySQL</p>
                     </div>
                     <div class="tech-card group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-green-400/30 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(74,222,128,0.1)] cursor-pointer text-center">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-plug text-green-400"></i></div>
+                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300" style="color:#4ADE80"><i class="fas fa-plug"></i></div>
                         <p class="font-semibold text-sm">REST API</p>
                     </div>
                 </div>
@@ -336,27 +431,27 @@
                 </h3>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-orange-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-git-alt text-[#F05032]"></i></div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300" style="color:#F05032"><i class="fab fa-git-alt"></i></div>
                         <p class="font-semibold text-sm">Git</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-gray-300/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-github text-white"></i></div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300" style="color:#fff"><i class="fab fa-github"></i></div>
                         <p class="font-semibold text-sm">GitHub</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-blue-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-code text-[#007ACC]"></i></div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300" style="color:#007ACC"><i class="fas fa-code"></i></div>
                         <p class="font-semibold text-sm">VS Code</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-orange-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-paper-plane text-[#FF6C37]"></i></div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300" style="color:#FF6C37"><i class="fas fa-paper-plane"></i></div>
                         <p class="font-semibold text-sm">Postman</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-blue-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-server text-[#FF6C37]"></i></div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300" style="color:#FF6C37"><i class="fas fa-server"></i></div>
                         <p class="font-semibold text-sm">cPanel</p>
                     </div>
                     <div class="tech-card group p-5 rounded-2xl bg-dark-card border border-white/5 hover:border-red-400/30 transition-all duration-500 hover:scale-105 cursor-pointer text-center">
-                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300"><i class="fab fa-linux text-[#FCC624]"></i></div>
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300" style="color:#FCC624"><i class="fab fa-linux"></i></div>
                         <p class="font-semibold text-sm">Linux</p>
                     </div>
                 </div>
@@ -368,21 +463,23 @@
     <section id="projects" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
+            <!-- Section Header -->
             <div class="text-center mb-20 scroll-reveal">
-                <span class="text-primary font-mono text-sm tracking-widest uppercase">What I Built</span>
+                <span class="text-primary font-mono text-sm tracking-widest uppercase">Things I've Made</span>
                 <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">Featured <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Projects</span></h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">A selection of projects I've built from scratch. Each one solved a real problem.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
                 <a href="https://dentdock.xyz" target="_blank" class="project-card group scroll-reveal rounded-3xl bg-dark-card border border-white/5 overflow-hidden hover:border-primary/20 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(59,130,246,0.1)] block">
                     <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-primary/20 to-accent/20">
-                        <img src="assets/images/dentcare-dashboard.webp" alt="DentDock SaaS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/dentcare-dashboard.webp" alt="DentDock SaaS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">DentDock SaaS</h3>
-                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">Dental clinic management platform used by multiple clinics. Handles appointments, patient records, and revenue tracking.</p>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">Dental clinic management platform used by multiple clinics daily. Handles appointments, patient records, billing, and revenue tracking — all in one place.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">PHP</span>
                             <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-medium">MySQL</span>
@@ -395,11 +492,11 @@
                 <!-- Project 2 -->
                 <a href="#" class="project-card group scroll-reveal rounded-3xl bg-dark-card border border-white/5 overflow-hidden hover:border-secondary/20 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(6,182,212,0.1)] block" style="animation-delay: 0.1s;">
                     <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-secondary/20 to-green-500/20">
-                        <img src="assets/images/ems-dashboard.webp" alt="EMS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/ems-dashboard.webp" alt="EMS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-secondary transition-colors duration-300">Education Management System</h3>
-                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">School management system managing 200+ student records with attendance, exams, and SMS notifications.</p>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">School management system managing 200+ student records with attendance tracking, exam management, and automated SMS notifications for parents.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">PHP</span>
                             <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-medium">MySQL</span>
@@ -412,11 +509,11 @@
                 <!-- Project 3 -->
                 <a href="#" class="project-card group scroll-reveal rounded-3xl bg-dark-card border border-white/5 overflow-hidden hover:border-accent/20 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(139,92,246,0.1)] block" style="animation-delay: 0.2s;">
                     <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-accent/20 to-pink-500/20">
-                        <img src="assets/images/bsp-cover.webp" alt="Bondhon Sonchoy Prokolpo App" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/bsp-cover.webp" alt="Bondhon Sonchoy Prokolpo App" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors duration-300">Bondhon Sonchoy Prokolpo App</h3>
-                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">A savings and fund collection platform for managing group contributions, tracking deposits, and handling taka disbursements.</p>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors duration-300">Bondhon Sonchoy Prokolpo</h3>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">A savings and fund collection platform for managing group contributions, tracking deposits, and handling disbursements — built for real community use.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 rounded-full bg-cyan-400/10 text-cyan-400 text-xs font-medium">Tailwind CSS</span>
                             <span class="px-3 py-1 rounded-full bg-yellow-400/10 text-yellow-400 text-xs font-medium">JavaScript</span>
@@ -432,55 +529,65 @@
     <section id="services" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 scroll-reveal">
-                <span class="text-primary font-mono text-sm tracking-widest uppercase">What I Work With</span>
+                <span class="text-primary font-mono text-sm tracking-widest uppercase">What I Can Do For You</span>
                 <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">What I Can <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Build</span></h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">Full stack services from concept to deployment. No half measures.</p>
             </div>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 <!-- Service 1 -->
-                <div class="service-card group p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-primary/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(59,130,246,0.08)] scroll-reveal cursor-pointer">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <i class="fas fa-code text-2xl text-primary"></i>
+                <div class="service-card group p-6 sm:p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-primary/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(59,130,246,0.08)] scroll-reveal cursor-pointer">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <i class="fas fa-code text-xl sm:text-2xl text-primary"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 group-hover:text-primary transition-colors duration-300">Frontend Development</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Fast, accessible interfaces that work on every device. I focus on performance, not just making things pretty.</p>
+                    <h3 class="text-base sm:text-lg font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors duration-300">Frontend Development</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">Clean, fast interfaces that work on every device. I obsess over load times and accessibility because that's what users actually notice.</p>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="service-card group p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-secondary/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(6,182,212,0.08)] scroll-reveal cursor-pointer" style="animation-delay: 0.05s;">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <i class="fas fa-server text-2xl text-secondary"></i>
+                <div class="service-card group p-6 sm:p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-secondary/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(6,182,212,0.08)] scroll-reveal cursor-pointer">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <i class="fas fa-server text-xl sm:text-2xl text-secondary"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 group-hover:text-secondary transition-colors duration-300">Backend Development</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">PHP and MySQL backends that handle real traffic. Clean code, proper error handling, no shortcuts.</p>
+                    <h3 class="text-base sm:text-lg font-bold mb-2 sm:mb-3 group-hover:text-secondary transition-colors duration-300">Backend Development</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">PHP and MySQL backends that handle real traffic. Clean code, proper error handling, and no shortcuts that break in production.</p>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="service-card group p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-accent/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(139,92,246,0.08)] scroll-reveal cursor-pointer" style="animation-delay: 0.1s;">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <i class="fas fa-plug text-2xl text-accent"></i>
+                <div class="service-card group p-6 sm:p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-accent/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(139,92,246,0.08)] scroll-reveal cursor-pointer">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <i class="fas fa-plug text-xl sm:text-2xl text-accent"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 group-hover:text-accent transition-colors duration-300">API Development</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">REST APIs with authentication, validation, and documentation. Built for apps that need to talk to each other.</p>
+                    <h3 class="text-base sm:text-lg font-bold mb-2 sm:mb-3 group-hover:text-accent transition-colors duration-300">API Development</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">REST APIs with authentication, validation, and documentation. Built for apps that need to talk to each other reliably.</p>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="service-card group p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-orange-400/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(251,146,60,0.08)] scroll-reveal cursor-pointer" style="animation-delay: 0.15s;">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-400/20 to-orange-400/5 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <i class="fas fa-database text-2xl text-orange-400"></i>
+                <div class="service-card group p-6 sm:p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-orange-400/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(251,146,60,0.08)] scroll-reveal cursor-pointer">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-orange-400/20 to-orange-400/5 flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <i class="fas fa-database text-xl sm:text-2xl text-orange-400"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 group-hover:text-orange-400 transition-colors duration-300">Database Design</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">MySQL schemas that are normalized, indexed, and built to scale. Data architecture that doesn't break at 10k rows.</p>
+                    <h3 class="text-base sm:text-lg font-bold mb-2 sm:mb-3 group-hover:text-orange-400 transition-colors duration-300">Database Design</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">MySQL schemas that are normalized, indexed, and built to scale. Data architecture that doesn't slow down when your app grows.</p>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="service-card group p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-green-400/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(74,222,128,0.08)] scroll-reveal cursor-pointer sm:col-span-2 lg:col-span-1" style="animation-delay: 0.2s;">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-400/20 to-green-400/5 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <i class="fas fa-cloud text-2xl text-green-400"></i>
+                <div class="service-card group p-6 sm:p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-green-400/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(74,222,128,0.08)] scroll-reveal cursor-pointer">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-green-400/20 to-green-400/5 flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <i class="fas fa-cloud text-xl sm:text-2xl text-green-400"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 group-hover:text-green-400 transition-colors duration-300">SaaS Development</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Full SaaS products from idea to deployment. Multi-tenancy, auth, subscriptions — the works.</p>
+                    <h3 class="text-base sm:text-lg font-bold mb-2 sm:mb-3 group-hover:text-green-400 transition-colors duration-300">SaaS Development</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">Full SaaS products from idea to deployment. Multi-tenancy, auth, subscriptions — the whole thing, built right.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card group p-6 sm:p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-pink-400/20 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(236,72,153,0.08)] scroll-reveal cursor-pointer">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-pink-400/20 to-pink-400/5 flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <i class="fas fa-rocket text-xl sm:text-2xl text-pink-400"></i>
+                    </div>
+                    <h3 class="text-base sm:text-lg font-bold mb-2 sm:mb-3 group-hover:text-pink-400 transition-colors duration-300">Performance Optimization</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">Speed matters. I optimize load times, reduce bundle sizes, and make sure your app feels fast on every connection.</p>
                 </div>
             </div>
         </div>
@@ -490,16 +597,17 @@
     <section id="contact" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 scroll-reveal">
-                <span class="text-primary font-mono text-sm tracking-widest uppercase">Get In Touch</span>
+                <span class="text-primary font-mono text-sm tracking-widest uppercase">Let's Talk</span>
                 <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">Contact <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Me</span></h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">Have a project in mind? I'd love to hear about it. Drop me a message.</p>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
                 <!-- Contact Info -->
                 <div class="scroll-reveal">
-                    <h3 class="text-2xl font-bold mb-6">Get In <span class="text-primary">Touch</span></h3>
-                    <p class="text-gray-400 leading-relaxed mb-8">Have a project in mind? Let's talk.</p>
+                    <h3 class="text-2xl font-bold mb-6">Got a project? <span class="text-primary">Let's build it.</span></h3>
+                    <p class="text-gray-400 leading-relaxed mb-8">I'm always open to new opportunities and interesting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you.</p>
 
                     <div class="space-y-4 mb-8">
                         <a href="mailto:bloggermahim@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-dark-card border border-white/5 hover:border-primary/20 transition-all duration-300 group">
