@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="MD Mohiuddin — Full Stack Web Developer from Bangladesh. I build web applications that solve real problems using PHP, JavaScript, MySQL, and Tailwind CSS.">
+    <meta name="description" content="I'm Mohiuddin from Bangladesh. I code, I build, I ship. This is my little corner of the internet.">
     <meta name="keywords" content="MD Mohiuddin, Mohiuddin, Full Stack Developer, PHP Developer, JavaScript Developer, MySQL, Tailwind CSS, Frontend Developer, Backend Developer, Bangladesh, Web Developer, SaaS Developer, Portfolio">
     <meta name="author" content="MD Mohiuddin">
     <meta name="theme-color" content="#0A0A0A">
@@ -20,10 +20,10 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mohiuddin.mojumderit.com">
-    <meta property="og:title" content="MD Mohiuddin — Full Stack Web Developer">
-    <meta property="og:description" content="I build fast, clean web applications using PHP, JavaScript, MySQL, and Tailwind CSS. View my projects and get in touch.">
+    <meta property="og:title" content="Mohiuddin — My little corner of the internet">
+    <meta property="og:description" content="I'm Mohiuddin from Bangladesh. I code, I build, I ship. Take a look around.">
     <meta property="og:image" content="https://mohiuddin.mojumderit.com/assets/images/mohiuddin.webp">
-    <meta property="og:image:alt" content="MD Mohiuddin — Full Stack Developer">
+    <meta property="og:image:alt" content="MD Mohiuddin">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="MD Mohiuddin">
@@ -31,16 +31,16 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MD Mohiuddin — Full Stack Web Developer">
-    <meta name="twitter:description" content="I build fast, clean web applications using PHP, JavaScript, MySQL, and Tailwind CSS.">
+    <meta name="twitter:title" content="Mohiuddin — My little corner of the internet">
+    <meta name="twitter:description" content="I'm Mohiuddin from Bangladesh. I code, I build, I ship. Take a look around.">
     <meta name="twitter:image" content="https://mohiuddin.mojumderit.com/assets/images/mohiuddin.webp">
-    <meta name="twitter:image:alt" content="MD Mohiuddin — Full Stack Developer">
+    <meta name="twitter:image:alt" content="MD Mohiuddin">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://mohiuddin.mojumderit.com">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
-    <title>MD Mohiuddin — Full Stack Web Developer | PHP, JavaScript, MySQL</title>
+    <title>Mohiuddin — I build things for the web</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="assets/images/logo.webp">
@@ -279,17 +279,22 @@
                     </div>
                 </div>
 
-                <!-- Currently Learning Card -->
+                <!-- Education Card -->
                 <div class="col-span-1 scroll-reveal">
                     <div class="h-full p-5 sm:p-6 rounded-3xl bg-dark-card border border-white/5">
-                        <div class="w-10 h-10 rounded-xl bg-green-400/10 flex items-center justify-center mb-4">
-                            <i class="fas fa-book-open text-green-400"></i>
+                        <div class="w-10 h-10 rounded-xl bg-blue-400/10 flex items-center justify-center mb-4">
+                            <i class="fas fa-graduation-cap text-blue-400"></i>
                         </div>
-                        <h4 class="font-bold text-sm mb-3">Currently Learning</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2.5 py-1 rounded-lg bg-green-400/10 text-green-400 text-xs font-medium">Node.js</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-green-400/10 text-green-400 text-xs font-medium">Docker</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-green-400/10 text-green-400 text-xs font-medium">TypeScript</span>
+                        <h4 class="font-bold text-sm mb-3">Education</h4>
+                        <div class="space-y-3">
+                            <div>
+                                <p class="text-white text-xs font-semibold">Govt. Borhamganj College</p>
+                                <p class="text-gray-500 text-[11px]">2025 — Present</p>
+                            </div>
+                            <div>
+                                <p class="text-white text-xs font-semibold">Rahmania Dakhil Madrasha</p>
+                                <p class="text-gray-500 text-[11px]">2023 — 2025</p>
+                            </div>
                         </div>
                     </div>
                 </div>
