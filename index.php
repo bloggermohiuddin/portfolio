@@ -26,7 +26,7 @@
     <meta property="og:image:alt" content="MD Mohiuddin">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="MD Mohiuddin">
+    <meta property="og:site_name" content="Mohiuddin">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
@@ -43,8 +43,8 @@
     <title>Mohiuddin — I build things for the web</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="assets/images/logo.webp">
-    <link rel="apple-touch-icon" href="assets/images/logo.webp">
+    <link rel="icon" type="image/png" href="assets/images/og-image.png">
+    <link rel="apple-touch-icon" href="assets/images/og-image.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

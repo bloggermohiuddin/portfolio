@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mohiuddin.mojumderit.com/sitemap.xml
+
+# Favicon
+favicon: /assets/images/og-image.png
