@@ -51,10 +51,14 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/images/mohiuddin.webp" as="image" fetchpriority="high">
+
     <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -227,7 +231,7 @@
 
                     <div class="hero-avatar-wrapper">
                         <div class="hero-avatar-border">
-                            <img src="assets/images/mohiuddin.webp" alt="MD Mohiuddin - Full Stack Developer" class="hero-avatar-img" loading="eager">
+                            <img src="assets/images/mohiuddin.webp" alt="MD Mohiuddin - Full Stack Developer" class="hero-avatar-img" loading="eager" fetchpriority="high" width="320" height="320">
                         </div>
                     </div>
                 </div>
@@ -262,7 +266,7 @@
                 <div class="col-span-2 row-span-2 scroll-reveal">
                     <div class="relative h-full rounded-3xl overflow-hidden bg-gradient-to-br from-dark-card to-dark-surface border border-white/5 p-2 group">
                         <div class="rounded-2xl overflow-hidden bg-dark-surface h-full min-h-[300px] sm:min-h-[400px]">
-                            <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/mohiuddin.webp" alt="MD Mohiuddin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 blur-load">
+                            <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/mohiuddin.webp" alt="MD Mohiuddin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 blur-load" width="600" height="600">
                         </div>
                     </div>
                 </div>
@@ -480,7 +484,7 @@
                 <!-- Project 1 -->
                 <a href="https://dentdock.xyz" target="_blank" class="project-card group scroll-reveal rounded-3xl bg-dark-card border border-white/5 overflow-hidden hover:border-primary/20 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(59,130,246,0.1)] block">
                     <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-primary/20 to-accent/20">
-                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/dentcare-dashboard.webp" alt="DentDock SaaS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load">
+                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/dentcare-dashboard.webp" alt="DentDock SaaS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load" width="800" height="450">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">DentDock SaaS</h3>
@@ -497,7 +501,7 @@
                 <!-- Project 2 -->
                 <a href="#" class="project-card group scroll-reveal rounded-3xl bg-dark-card border border-white/5 overflow-hidden hover:border-secondary/20 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(6,182,212,0.1)] block" style="animation-delay: 0.1s;">
                     <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-secondary/20 to-green-500/20">
-                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/ems-dashboard.webp" alt="EMS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load">
+                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/ems-dashboard.webp" alt="EMS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load" width="800" height="450">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-secondary transition-colors duration-300">Education Management System</h3>
@@ -514,7 +518,7 @@
                 <!-- Project 3 -->
                 <a href="#" class="project-card group scroll-reveal rounded-3xl bg-dark-card border border-white/5 overflow-hidden hover:border-accent/20 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(139,92,246,0.1)] block" style="animation-delay: 0.2s;">
                     <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-accent/20 to-pink-500/20">
-                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/bsp-cover.webp" alt="Bondhon Sonchoy Prokolpo App" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load">
+                        <img src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" data-src="assets/images/bsp-cover.webp" alt="Bondhon Sonchoy Prokolpo App" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-load" width="800" height="450">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors duration-300">Bondhon Sonchoy Prokolpo</h3>
