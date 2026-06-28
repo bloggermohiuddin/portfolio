@@ -1,4 +1,17 @@
+# All bots welcome
 User-agent: *
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Facebook
+User-agent: Facebookbot
+Allow: /
+
+# Bing
+User-agent: bingbot
 Allow: /
 
 Sitemap: https://mohiuddin.mojumderit.com/sitemap.xml
