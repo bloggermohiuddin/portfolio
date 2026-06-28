@@ -69,7 +69,7 @@
         "url": "https://mohiuddin.mojumderit.com",
         "image": "https://mohiuddin.mojumderit.com/assets/images/mohiuddin.webp",
         "jobTitle": "Full Stack Web Developer",
-        "description": "Full Stack Web Developer from Bangladesh specializing in PHP, JavaScript, MySQL, and modern web technologies.",
+        "description": "I code, I build, I ship. Full stack developer from Bangladesh.",
         "address": {
             "@type": "PostalAddress",
             "addressCountry": "BD"
@@ -80,6 +80,19 @@
             "https://github.com/mdmohiuddin",
             "https://linkedin.com/in/mdmohiuddin"
         ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Mohiuddin",
+        "url": "https://mohiuddin.mojumderit.com",
+        "description": "I'm Mohiuddin from Bangladesh. I code, I build, I ship.",
+        "publisher": {
+            "@type": "Person",
+            "name": "MD Mohiuddin"
+        }
     }
     </script>
 </head>
