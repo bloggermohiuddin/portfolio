@@ -452,12 +452,6 @@
                 duration: 1,
                 ease: 'power3.out'
             })
-            .to('#hero .max-w-lg', {
-                opacity: 1,
-                y: 0,
-                duration: 0.9,
-                ease: 'power3.out'
-            }, '-=0.6')
             .to('.h-10.mb-10', {
                 opacity: 1,
                 y: 0,
