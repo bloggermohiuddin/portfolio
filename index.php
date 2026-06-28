@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://mohiuddin.mojumderit.com">
     <meta property="og:title" content="Mohiuddin — My little corner of the internet">
     <meta property="og:description" content="I'm Mohiuddin from Bangladesh. I code, I build, I ship. Take a look around.">
-    <meta property="og:image" content="https://mohiuddin.mojumderit.com/assets/images/mohiuddin.webp">
+    <meta property="og:image" content="https://mohiuddin.mojumderit.com/assets/images/og-image.png">
     <meta property="og:image:alt" content="MD Mohiuddin">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mohiuddin — My little corner of the internet">
     <meta name="twitter:description" content="I'm Mohiuddin from Bangladesh. I code, I build, I ship. Take a look around.">
-    <meta name="twitter:image" content="https://mohiuddin.mojumderit.com/assets/images/mohiuddin.webp">
+    <meta name="twitter:image" content="https://mohiuddin.mojumderit.com/assets/images/og-image.png">
     <meta name="twitter:image:alt" content="MD Mohiuddin">
 
     <!-- Canonical URL -->
