@@ -14,6 +14,7 @@
     <meta name="application-name" content="MD Mohiuddin">
     <meta name="apple-mobile-web-app-title" content="MD Mohiuddin">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Open Graph / Facebook -->
