@@ -7,7 +7,7 @@ User-agent: Googlebot
 Allow: /
 
 # Facebook
-User-agent: Facebookbot
+User-agent: facebookexternalhit
 Allow: /
 
 # Bing
